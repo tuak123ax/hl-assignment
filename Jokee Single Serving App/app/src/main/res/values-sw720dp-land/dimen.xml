@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--This file is applied for mobile phone with screen size > 720dp <= 900dp in landscape mode -->
+<!--This file is applied for tablet with: 720dp < screen size <= 900dp in landscape mode -->
 <resources>
     <bool name="isTablet">true</bool>
     <!-- Logo and Avatar-->
