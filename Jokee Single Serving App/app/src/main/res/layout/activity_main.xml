@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingView"
+        android:visibility="gone"
+        android:background="@color/white"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progessBar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/progessBar"
+            android:text="@string/explain_waiting"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainView">
+        <ImageView
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+            android:src="@drawable/left_icon"
+            android:layout_alignParentStart="true"
+            android:id="@+id/logo"
+            android:layout_marginTop="@dimen/logo_marginTopAndBottom"
+            android:layout_marginBottom="@dimen/logo_marginTopAndBottom"
+            android:layout_marginStart="@dimen/logo_marginStart"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+            android:src="@drawable/right_icon"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/avatar"
+            android:layout_marginTop="@dimen/logo_marginTopAndBottom"
+            android:layout_marginBottom="@dimen/logo_marginTopAndBottom"
+            android:layout_marginEnd="@dimen/avatar_marginEnd"
+            android:layout_marginStart="@dimen/avatar_marginStart"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/handicrafted_by"
+            android:textSize="@dimen/content_text_size"
+            android:textColor="@color/blur_text"
+            android:layout_toStartOf = "@id/avatar"
+            android:id="@+id/textViewHandicrafted"
+            android:layout_marginTop="@dimen/text_marginTop"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/user_name"
+            android:textSize="@dimen/content_text_size"
+            android:layout_toStartOf = "@id/avatar"
+            android:layout_below="@+id/textViewHandicrafted"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_layout_height"
+            android:background="@color/background_title"
+            android:layout_below="@+id/logo"
+            android:id = "@+id/layoutTitle"
+            android:layout_marginBottom="@dimen/title_layout_marginBottom"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "@string/joke_title"
+                android:textColor = "@color/white"
+                android:id = "@+id/jokeTitle"
+                android:textSize="@dimen/title_text_size"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/title_marginTop"
+                android:layout_marginBottom="@dimen/title_marginBottom"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/joke_sub_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/subtitle_text_size"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/jokeSubTitle"
+                android:layout_below="@+id/jokeTitle"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "@string/joke_content"
+            android:textSize="@dimen/content_text_size"
+            android:textColor="@color/content_text"
+            android:layout_below="@+id/layoutTitle"
+            android:id = "@+id/jokeContent"
+            android:layout_marginHorizontal="@dimen/content_marginHorizontal"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/explainText"
+            android:id = "@+id/layoutButton"
+            android:layout_marginBottom="@dimen/button_layout_marginBottom"
+            android:layout_centerHorizontal="true"
+            >
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/funny_button_text"
+                android:textSize="@dimen/button_text_size"
+                android:id="@+id/funnyButton"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/funny_button"
+                android:layout_marginEnd="@dimen/button_marginEnd"
+                android:textColor="@color/white"
+                android:background="@drawable/square_button"
+                />
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/not_funny_button_text"
+                android:id="@+id/notFunnyButton"
+                android:textSize="@dimen/button_text_size"
+                android:layout_toEndOf = "@id/funnyButton"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/background_title"
+                android:textColor="@color/white"
+                android:background="@drawable/square_button"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/copyrightText"
+            android:text = "@string/explain_text"
+            android:textSize="@dimen/introduction_text_size"
+            android:textColor="@color/blur_text"
+            android:id="@+id/explainText"
+            android:layout_marginHorizontal="@dimen/text_marginHorizontal"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "@string/copyright_2021_hls"
+            android:textSize="@dimen/content_text_size"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:id="@+id/copyrightText"
+            android:textAlignment="gravity"
+            android:layout_marginVertical="@dimen/text_marginVertical"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

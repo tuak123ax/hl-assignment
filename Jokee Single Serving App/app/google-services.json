@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "651431127806",
+    "project_id": "jokee-single-serving-app-15d78",
+    "storage_bucket": "jokee-single-serving-app-15d78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651431127806:android:dfd49b87e8a155f6a193af",
+        "android_client_info": {
+          "package_name": "com.minhtu.jokeesingleservingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfkyK953lAc1TdoKTNHa6ngr0VNJkCvzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

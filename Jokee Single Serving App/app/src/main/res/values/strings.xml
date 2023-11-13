@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Jokee Single Serving APP</string>
+    <string name="joke_content">A child asked his father, \"How were people born?\" So his father said, \"Adam and Eve made babies, then their babies became adults and made babies, and so on.\"
+
+The child then went to his mother, asked her the same question and she told him, \"We were monkeys then we evolved to become like we are now.\"
+
+The child ran back to his father and said, \"You lied to me!\" His father replied, \"No, your mom was talking about her side of the family.\"</string>
+    <string name="explain_text">This app is created as part of Hlsolutions program. The materials con-tained on this website are provided for general information only and do not constitute any form of advice. HLS assumes no responsibility for the accuracy of any particular statement and accepts no liability for any loss or damage which may arise from reliance on the infor-mation contained on this site.</string>
+    <string name="explain_waiting">Please wait to get jokes…</string>
+    <string name="handicrafted_by">Handicrafted by</string>
+    <string name="user_name"><b>Jim HLS</b></string>
+    <string name="joke_title">A joke a day keeps the doctor away</string>
+    <string name="joke_sub_title">If you joke wrong way, your teeth have to pay. (Serious)</string>
+    <string name="copyright_2021_hls"><b>Copyright 2021 HLS</b></string>
+    <string name="funny_button_text">This is Funny!</string>
+    <string name="not_funny_button_text">This is not funny.</string>
+</resources>
